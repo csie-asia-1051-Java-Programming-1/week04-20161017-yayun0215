@@ -11,12 +11,22 @@ public class ex02_105021062 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scn=new Scanner(System.in);
-		System.out.println("請輸入n m的數值");
-		int n =scn.nextInt();
-		int m=scn.nextInt();
-		
-    System.out.println("是否繼續?(y/n)");
-    char a=scn.next().charAt(0);
+		char a = 0;
+		while (a == 'Y' || a == 'y') {
+			System.out.println("請輸入n m的數值");
+		}
+			int n = scn.nextInt();
+			int m = scn.nextInt();
+			
+			for (int i = 1; i <= n; i++) {
+				for (int j = 1; j <= m; j++) {
+					System.out.print(i * j + "\t");
+				}
+				System.out.println();
+			}
+			a = scn.next().charAt(0);
+			if (a == 'n' || a == 'N') {
+				System.out.println("掰掰");
     {
     	
     }
@@ -24,4 +34,5 @@ public class ex02_105021062 {
 	}
 	
  
+}
 }
